@@ -131,7 +131,7 @@ def antiSequencer(array):
     for dic in array:
         randSymbol = random.choice(["?","/","#","$","&"])
         number_sequence += (dic["id"] + randSymbol)
-        finalCode += (dic["fragment"] + random.choice(["/","%","<",">"]))
+        finalCode += (dic["fragment"] + random.choice(["|","%","<",">"]))
     return number_sequence, finalCode
 
 main()
